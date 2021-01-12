@@ -1,18 +1,32 @@
+
+
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+     <section>
+       <div :style="image" class="image"></div>
+    </section>
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
-@Component({
-  components: {
-    HelloWorld,
-  },
-})
-export default class Home extends Vue {}
+
+
+<script lang="ts">
+export default {
+   data() {
+            return {
+                image: {backgroundImage: "url(https://images.unsplash.com/photo-1610440042657-612c34d95e9f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)"}
+            };
+        }
+}
 </script>
+
+
+
+
+<style>
+    .image {
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+</style>

@@ -1,0 +1,67 @@
+{
+  "_from": "vuetifly",
+  "_id": "vuetifly@0.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-p5N+YADhxWdtn7EQYS15SKTsmplSP2v3j1QOSLvTwPA1kjgX2WFd798Tk7U3bjW7v1Pkb1dptkraaawgA+eHoA==",
+  "_location": "/vuetifly",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "vuetifly",
+    "name": "vuetifly",
+    "escapedName": "vuetifly",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vuetifly/-/vuetifly-0.0.7.tgz",
+  "_shasum": "fa727e0afb9676a4bdfc64157e47bc80c2ff2d1f",
+  "_spec": "vuetifly",
+  "_where": "C:\\Users\\Zona-Z\\Desktop\\VUE",
+  "bugs": {
+    "url": "https://github.com/lupas/vuetifly/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "<p align=\"center\"><img align=\"center\" height=\"250px\" src=\"https://github.com/lupas/vuetifly/blob/master/misc/logo/vuetifly_logo.png?raw=true\"/></p>",
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.1",
+    "@vue/cli-plugin-eslint": "^4.1.1",
+    "@vue/cli-service": "^4.1.1",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.0.1",
+    "prettier": "^1.19.1"
+  },
+  "files": [
+    "src"
+  ],
+  "homepage": "https://github.com/lupas/vuetifly#readme",
+  "license": "https://github.com/lupas/vuetifly/blob/master/LICENSE.md",
+  "main": "src/main.js",
+  "name": "vuetifly",
+  "peerDependencies": {
+    "vue": "^2.6.10",
+    "vuetify": "^2.1.3",
+    "core-js": "^2.6.5"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lupas/vuetifly.git"
+  },
+  "scripts": {
+    "publishToNpm": "npm publish"
+  },
+  "version": "0.0.7"
+}
