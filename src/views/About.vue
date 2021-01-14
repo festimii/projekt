@@ -1,7 +1,7 @@
 
 
 <template>
-  <div class="home">
+  <div class="about">
      <section>
       <div :style="image" class="image"></div>
     </section>
@@ -24,8 +24,7 @@ export default {
 
 <style>
     .image {
-      
-        max-height: 100%;
+       height: 100vh;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;

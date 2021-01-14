@@ -2,9 +2,27 @@
 
 <template>
   <div class="home">
-     <section>
-       <div :style="image" class="image"></div>
-    </section>
+    <Navbar />
+
+    <div
+      class="container"
+      style="
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+      "
+    >
+      <div class="left">
+        <img src="../assets/name.svg" alt="" srcset="" />
+      </div>
+    
+    </div>
+    <div>
+      
+
+    </div>
+    
   </div>
 </template>
 
@@ -12,21 +30,38 @@
 
 
 <script lang="ts">
+import Navbar from "../components/Navbar.vue";
 export default {
-   data() {
-            return {
-                image: {backgroundImage: "url(https://images.unsplash.com/photo-1610440042657-612c34d95e9f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)"}
-            };
-        }
-}
+  components: { Navbar },
+};
 </script>
 
 
 
 
 <style>
-    .image {
-        height: 100vh;
-        background-repeat: no-repeat;
-    }
+.home {
+  background: #360033;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container {
+  display: grid;
+  grid-template-columns: 50fr 50fr;
+  height: 100vh;
+}
+.left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+}
 </style>
