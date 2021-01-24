@@ -1,7 +1,7 @@
 
 <template>
   <div id="app">
-    <Navbar />
+    
 
     <router-view />
     <portal-target name="account"/>

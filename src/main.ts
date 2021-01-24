@@ -24,3 +24,5 @@ import '../src/assets/main.css'
 Vue.use(BootstrapVue)
 
 Vue.component('Navbar', require('./components/Navbar.vue').default);
+import PortalVue from 'portal-vue';
+Vue.use(PortalVue);

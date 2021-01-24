@@ -2,6 +2,7 @@
 
 <template>
   <div class="about">
+    <Navbar />
      <section>
       <div :style="image" class="image"></div>
     </section>
