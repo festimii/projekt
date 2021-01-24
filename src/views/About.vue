@@ -5,7 +5,9 @@
      <section>
       <div :style="image" class="image"></div>
     </section>
+    
   </div>
+  
 </template>
 
 

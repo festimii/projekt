@@ -4,6 +4,7 @@
     <Navbar />
 
     <router-view />
+    <portal-target name="account"/>
   </div>
 </template>
 

@@ -2,7 +2,7 @@
 <header class="header">
   <b-navbar  class="Navbar" toggleable="lg" type="dark" variant="dark" style="  background-color: transparent;
 ">
-        <b-navbar-brand to="/"><img id="logo" src="../assets/logo.svg" alt="" srcset="" /></b-navbar-brand>
+        <b-navbar-brand to="/"><img id="logo" src="../assets/logo.svg" alt="" srcset="" />  Dr.Festim</b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
@@ -16,8 +16,8 @@
               <template #button-content>
                 <em>ACCOUNT</em>
               </template>
-              <b-dropdown-item to="Login">LogIn</b-dropdown-item>
-              <b-dropdown-item href="#">Register</b-dropdown-item>
+              <b-dropdown-item>Login</b-dropdown-item>
+              <b-dropdown-item>Register</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </b-collapse>
@@ -27,6 +27,7 @@
 <script>
 export default {
     name:"Navbar",
+    
 }
 </script>
 
