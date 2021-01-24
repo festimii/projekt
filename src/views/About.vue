@@ -23,13 +23,4 @@ export default {
 
 
 <style>
-    .image {
-       height: 100vh;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-       background-size: cover;
-       background-repeat: no-repeat;
-       overflow:hidden
-    }
 </style>
