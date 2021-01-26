@@ -13,15 +13,15 @@
         padding-right: 0px;
       "
     >
+    
       <div class="left">
         <img src="../assets/name.svg" alt="" srcset="" />
       </div>
     
     </div>
-    <div>
-      
-
-    </div>
+    
+      <Account />
+  
     
   </div>
 </template>
@@ -29,10 +29,12 @@
 
 
 
-<script lang="ts">
+<script>
+
 import Navbar from "../components/Navbar.vue";
+import Account from '../components/Account.vue';
 export default {
-  components: { Navbar },
+  components: { Navbar,Account}
 };
 </script>
 

@@ -16,18 +16,20 @@
               <template #button-content>
                 <em>ACCOUNT</em>
               </template>
-              <b-dropdown-item>Login</b-dropdown-item>
+              <b-dropdown-item v-b-modal.modalPopover> Login </b-dropdown-item>
               <b-dropdown-item>Register</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
+    
       </header>
 </template>
 <script>
+import Account from './Account.vue';
 export default {
     name:"Navbar",
-    
+    components:{Account}
 }
 </script>
 

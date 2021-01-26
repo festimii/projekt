@@ -9,7 +9,7 @@
   "dependencies": {
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.21.2",
-    "core-js": "^3.6.5",
+    "core-js": "^3.8.3",
     "node-module": "^2.0.0",
     "node-modules": "^1.0.1",
     "vue": "^2.6.12",

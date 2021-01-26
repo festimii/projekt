@@ -1,10 +1,7 @@
 
 <template>
   <div id="app">
-    
-
-    <router-view />
-    <portal-target name="account"/>
+  <router-view />
   </div>
 </template>
 
