@@ -58,3 +58,30 @@ background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, F
   align-items: end;
   flex-direction: column;
 }
+
+
+/* Account */
+.modal-header{
+  border-bottom: 0px;
+}
+.modal-footer{
+  border-top: 0px;
+}
+.btn-primary{
+  display: none;
+}
+.btn-primary:hover{
+  color: transparent ;
+background-color: transparent;
+border-color: transparent;
+}
+.btn, .btn-secondary{
+  margin-right: 1em;
+margin-left: 0px;
+width: 18.8rem;
+text-align: center;
+
+}
+.modal-dialog,.modal-md{
+  margin-top: 6.75rem;
+}

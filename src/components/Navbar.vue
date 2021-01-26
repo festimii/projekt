@@ -16,7 +16,7 @@
               <template #button-content>
                 <em>ACCOUNT</em>
               </template>
-              <b-dropdown-item v-b-modal.modalPopover> Login </b-dropdown-item>
+              <b-dropdown-item v-b-modal.loginModal> Login </b-dropdown-item>
               <b-dropdown-item>Register</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
