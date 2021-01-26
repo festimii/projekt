@@ -25,7 +25,8 @@
     
       </header>
 </template>
-<script>
+
+<script lang="ts">
 import Account from './Account.vue';
 export default {
     name:"Navbar",

@@ -36,12 +36,13 @@
 
 
 
-<script>
+<script lang="ts">
 export default {
   name: "Account",
   props: {},
 };
 </script>
+
 <style lang="scss">
 @media (min-width: 576px) {
   .modal-dialog {

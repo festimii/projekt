@@ -29,7 +29,7 @@
 
 
 
-<script>
+<script lang="ts">
 
 import Navbar from "../components/Navbar.vue";
 import Account from '../components/Account.vue';
