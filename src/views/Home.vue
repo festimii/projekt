@@ -21,7 +21,7 @@
     </div>
     
       <Account />
-  
+      <Register />
     
   </div>
 </template>
@@ -33,8 +33,10 @@
 
 import Navbar from "../components/Navbar.vue";
 import Account from '../components/Account.vue';
+import Register from '../components/Register.vue';
+
 export default {
-  components: { Navbar,Account}
+  components: { Navbar,Account,Register}
 };
 </script>
 
