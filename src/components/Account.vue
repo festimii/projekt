@@ -100,9 +100,9 @@ export default {
   methods: {
     login() {
       fb.auth().signInWithEmailAndPassword(this.email, this.password).then((userCredential) => {
-          // Signed in
+          this.$router.replace('panel');
           var user = userCredential.user;
-          console.log(user);
+          console.log(user); // mos e fshi dej build
         })
         .catch((error) => {
           var errorCode = error.code;

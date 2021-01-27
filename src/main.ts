@@ -4,14 +4,24 @@ import Vue from 'vue'
 import './plugins/bootstrap-vue'
 import App from './App.vue'
 import router from './router'
-import firebase from 'firebase'
+import {fb} from '../src/components/firebaseConfig'
 Vue.config.productionTip = false
 
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app')
 
+
+
+let app = '';
+
+fb.auth().onAuthStateChanged(function(user) {
+
+  if(!app){
+    new Vue({
+      router,
+      render: h => h(App)
+    }).$mount("#app");
+    
+  }
+  });
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
