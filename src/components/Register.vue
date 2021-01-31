@@ -14,14 +14,14 @@
         </div>
         <div class="d-flex flex-column text-center">
           <form>
-            <div class="form-group">
+            <div class="form-group ">
               <input
                 v-model="name"
                 type="name"
-                class="form-control"
+                class="form-control is-invalid"
                 id="name"
                 placeholder="Your name..."
-                required
+                
               />
             </div>
             <div class="form-group">
@@ -84,7 +84,7 @@ export default {
         })
         .catch((error) => {
           var errorCode = error.code;
-          var errorMessage = error.message;
+          var errorMessage =  alert(error.message);
           // ..
         });
     },
@@ -126,3 +126,4 @@ export default {
   padding: 0.3rem 0rem;
 }
 </style>
+ssss

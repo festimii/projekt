@@ -7,7 +7,7 @@
     role="dialog"
     aria-labelledby="exampleModalLabel"
     aria-hidden="true"
-    >
+    >  
   <div class="modal-body">
     <div class="form-title text-center">
         <h4>Login</h4>
@@ -96,7 +96,6 @@ export default {
     };
   },
 
-
   methods: {
     login() {
       fb.auth().signInWithEmailAndPassword(this.email, this.password).then((userCredential) => {
@@ -106,7 +105,7 @@ export default {
         })
         .catch((error) => {
           var errorCode = error.code;
-          var errorMessage = error.message;
+          var errorMessage = alert(error.message);
         });
     },
   },

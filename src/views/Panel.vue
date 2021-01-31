@@ -2,10 +2,7 @@
   <div class="panel">
 
         <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Dr.Festim</a>
-        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" >Dr.Festim</a>
         <input class="form-control form-control-dark w-100" type="text" placeholder="Search " aria-label="Search">
         <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
@@ -37,24 +34,125 @@
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
           <span>Saved reports</span>
-          <a class="link-secondary" href="#" aria-label="Add a new report">
+          <a class="link-secondary" to="/panel" aria-label="Add a new report">
             <span data-feather="plus-circle"></span>
           </a>
         </h6>
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" to="/panel">
               <span data-feather="file-text"></span>
               Current month
             </a>
           </li>
-      
-      
-       
         </ul>
       </div>
     </nav>
+
+
+
+
+<main id="main" class="col-md-9 ms-sm-auto col-lg-10 px-md-4">  
+<form class="needs-validation" novalidate>
+   <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">Emri</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Emri"  required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Mbiemri</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Mbiemri"  required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+    <label for="inputAddress">Adresa</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="2121 Nazmi Ugzmajli Rr">
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
   </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Qyteti</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Qyteti" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">Kombesia</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="Kombesia" required>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">Grupi Gjakut</label>
+      <select class="form-control" id="validationCustom05" required>
+      <option>Cakto Grupin</option>
+      <option>A+</option>
+      <option>A-</option>
+      <option>B+</option>
+      <option>B-</option>
+      <option>0+</option>
+      <option>0-</option>
+      <option>AB+</option>
+      <option>AB-</option>
+      </select>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+     <legend class="col-form-label col-sm-2 pt-0">ALERXHI</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            PO
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            JO
+          </label>
+        </div>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+    <div class="col-sm-10">
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">Pershkrimi i kontrolles</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    </div>
+  </div>
+  <div class="col-md-6 mb-3" style="margin-left:-16px;">
+      <label for="validationCustom03">Pagesa</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="" required>
+      <div class="invalid-feedback">
+        Please provide Money.
+      </div>
+    </div>
+       <button id="btn1" class="btn btn-secondary" type="submit">Ruaj</button>
+</form>
+    </main>
+
+
+
+
+
+
+
+  </div>
+
 </template>
 
 <script>
@@ -73,10 +171,36 @@ export default {
         }
     }
 };
+
+
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+
+
+
 </script>
 <style scoped>
 body {
   font-size: .875rem;
+}
+#sidebarMenu{
+  margin-left: 1em;
 }
 .feather {
   width: 16px;
@@ -100,41 +224,17 @@ body {
     border-radius: 0;
 }
 .form-control-dark {
-    color: #fff;
+    background-color: white;
     background-color: rgba(255, 255, 255, .1);
     border-color: rgba(255, 255, 255, .1);
 }
 .form-control-dark:focus {
+  background-color: white;
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
 .w-100 {
     width: 100% !important;
-}
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-        border-top-color: rgb(206, 212, 218);
-        border-top-width: 1px;
-        border-right-color: rgb(206, 212, 218);
-        border-right-width: 1px;
-        border-bottom-color: rgb(206, 212, 218);
-        border-bottom-width: 1px;
-        border-left-color: rgb(206, 212, 218);
-        border-left-width: 1px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .flex-md-nowrap {
     flex-wrap: nowrap !important;
@@ -200,5 +300,9 @@ body {
 }
 .flex-column {
     flex-direction: column !important;
+}
+#main{
+  margin-left: 17em;
+  margin-top: 15px;
 }
 </style>
