@@ -1,9 +1,11 @@
 import { fb } from '@/components/firebaseConfig'
 import Vue from 'vue'
+import Component from 'vue-class-component'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Panel from '../views/Panel.vue'
+import Rep from '../views/Rep.vue'
 
 
 Vue.use(VueRouter)
@@ -12,12 +14,18 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
   },
   {
     path: '/panel',
     name: 'Panel',
     component: Panel,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/rep',
+    name: 'Rep',
+    component: Rep,
     meta: { requiresAuth: true },
   },
   {

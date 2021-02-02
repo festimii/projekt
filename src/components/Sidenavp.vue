@@ -3,16 +3,16 @@
       <div class="position-sticky pt-3">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-chart-line"></i>
+            <b-nav-item class="nav-link active" aria-current="page" to="/Panel"><i class="fas fa-chart-line"></i>
               <span data-feather="home"></span>
               Dashboard
-            </a>
+            </b-nav-item>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-sticky-note"></i>
+             <b-nav-item class="nav-link" to="/rep"><i class="fas fa-sticky-note"></i>
               <span data-feather="bar-chart-2"></span>
               Reports
-            </a>
+             </b-nav-item>
           </li>
         </ul>
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">

@@ -7,7 +7,6 @@
       </main>
       </div>
 </template>
-
 <script>
 import Sidenavp from '../components/Sidenavp.vue';
 import Topnavp from '../components/Topnavp.vue';
