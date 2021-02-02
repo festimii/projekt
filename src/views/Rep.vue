@@ -46,8 +46,6 @@ import Topnavp from '../components/Topnavp.vue';
 export default {
     name:"rep",
         components:{Topnavp,Sidenavp},
-
-
         data() {
             return {
                 Users: []
