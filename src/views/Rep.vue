@@ -2,24 +2,33 @@
   <div class="rep">
         <Topnavp /> 
         <Sidenavp />
-        <main id="main" class="col-md-9 ms-sm-auto col-lg-10 px-md-4">  
-         <div class="row" style="margin-left: 19em;">
+        <main id="main" style="right:-1.982em;" class="col-md-9 ms-sm-auto col-lg-10 px-md-4">  
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">REPORTS</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          
+        </div>
+      </div>
+         <div class="row" style="">
             <div class="col-md-12">
-                <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Emri</th>
-                        <th>Mbiemri</th>
-                        <th>Adresa</th>
-                        <th>Qyteti</th>
-                        <th>Kombesia</th>
-                        <th>Gjaku</th>
-                        <th>Alergjia</th>
-                        <th>Pagesa</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="user in Users" :key="user.key">
+
+ <table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Emri</th>
+      <th scope="col">Mbiemri</th>
+      <th scope="col">Adresa</th>
+      <th scope="col">Qyteti</th>
+      <th scope="col">Kombesia</th>
+      <th scope="col">Gjaku</th>
+      <th scope="col">Alergjia</th>
+      <th scope="col">Pagesa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="user in Users" :key="user.key">
+                        <td>{{ displayName }}</td>
                         <td>{{ user.emri }}</td>
                         <td>{{ user.mbiemri }}</td>
                         <td>{{ user.adresa }}</td>
@@ -31,9 +40,9 @@
                         <td>
                             <button @click.prevent="deleteUser(user.key)" class="btn btn-danger">Delete</button>
                         </td>
-                    </tr>
-                </tbody>
-            </table>
+    </tr>
+  </tbody>
+</table>
         </div>
     </div>
         </main>
