@@ -43,9 +43,14 @@ export default {
 <style >
 body {
   font-size: .875rem;
+  background-color: #212529 !important;
+}
+.nav-iteam {
+  color: #f8f9fa;
 }
 #sidebarMenu{
-  margin-left: 1em;
+  background-color: #212529 !important;
+  color: #f8f9fa;
 }
 .feather {
   width: 16px;

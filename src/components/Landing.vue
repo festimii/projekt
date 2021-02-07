@@ -1,5 +1,5 @@
 <template>
-<div class="Landing" style="padding-top: 30px;">
+<div class="Landing" style="padding-top: 4em;">
   <div id="parallax-world-of-ugg">
 
   <section>
@@ -85,6 +85,9 @@ export default {
 </script>
 
 <style>
+.Landing{
+
+}
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 #main {
@@ -159,10 +162,10 @@ export default {
   color: #3b8595;
 }
 .ny {
-  color: #3d3c3a;
+  color: #3b8595;
 }
 .atw {
-  color: #c48660;
+  color: #3b8595;
 }
 
 /* Section - Title */
@@ -181,7 +184,7 @@ export default {
 /* Section - Block */
 /**************************/
 #parallax-world-of-ugg .block {
-  background: white;
+  background: #212529;
   padding: 60px;
   width: 820px;
   margin: 0 auto;

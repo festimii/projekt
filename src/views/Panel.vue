@@ -33,9 +33,7 @@ body {
 font-family: 'Lora', serif; 
   font-size: .875rem;
 }
-#sidebarMenu{
-  margin-left: 1em;
-}
+
 .feather {
   width: 16px;
   height: 16px;
