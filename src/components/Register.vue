@@ -16,7 +16,7 @@
           <form>
             <div class="form-group ">
               <input
-                v-model="name"
+                v-model="username"
                 type="name"
                 class="form-control is-invalid"
                 id="name"
@@ -66,7 +66,7 @@ export default {
 
   data() {
     return {
-      name: "",
+      username: "",
       email: "",
       password: "",
     };
@@ -78,10 +78,18 @@ export default {
         .createUserWithEmailAndPassword(this.email, this.password)
         .then((userCredential) => {
            this.$router.replace('panel');
-          var user = userCredential.user;
+          const user = userCredential.user;
+          userCredential.user
+          .updateProfile({
+            displayName: this.username,
+          })
           console.log(user); // mos e fshi dej build
         
         })
+      
+          
+    
+        .then(()=>{})
         .catch((error) => {
           var errorCode = error.code;
           var errorMessage =  alert(error.message);
