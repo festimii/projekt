@@ -2,6 +2,7 @@
 
 <template>
   <div class="home">
+   
     <Navbar />
 
       <Landing />
@@ -16,6 +17,7 @@
 
 
 <script lang="ts">
+
 import Landing from "../components/Landing.vue";
 import Navbar from "../components/Navbar.vue";
 import Account from '../components/Account.vue';

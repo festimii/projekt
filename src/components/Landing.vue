@@ -1,7 +1,8 @@
 <template>
 <div class="Landing" style="padding-top: 4em;">
+   
   <div id="parallax-world-of-ugg">
-
+  
   <section>
     <div class="title">
       <h3>“The best doctor </h3>
@@ -79,15 +80,16 @@ Fusce id suscipit libero, in eleifend nunc. Aliquam iaculis a velit viverra auct
 </template>
 
 <script>
+
+import LodingS from "./LodingS.vue"
 export default {
     name:"Landing",
+    components: {LodingS,}
 }
 </script>
 
 <style>
-.Landing{
 
-}
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 #main {

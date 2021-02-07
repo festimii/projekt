@@ -5,11 +5,7 @@ import './plugins/bootstrap-vue'
 import App from './App.vue'
 import router from './router'
 import {fb} from '../src/components/firebaseConfig'
-import Vuelidate from 'vuelidate'
 Vue.config.productionTip = false
-
-Vue.use(Vuelidate)
-
 
 
 let app = '';
