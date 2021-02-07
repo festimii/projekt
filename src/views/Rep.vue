@@ -97,6 +97,7 @@ export default {
 
 <style scoped>
 body {
+    font-family: 'Lora', serif;
   font-size: .875rem;
 }
 #sidebarMenu{

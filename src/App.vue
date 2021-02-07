@@ -14,6 +14,7 @@ export default {
 </script>
 <style>
 #app {
+  
   color: #2c3e50;
   overflow: hidden;
 }

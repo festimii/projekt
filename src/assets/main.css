@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+  body{
+    font-family: 'Lora', serif;
+    
+  }
 /* nav */
 
 .navbar-dark .navbar-nav .nav-link{
     color: rgb(255, 255, 255);
 }
 .bg-dark{
-  background-color: transparent !important;
+  background-color: #000;
 
 }
 #logo {
@@ -34,12 +39,7 @@
     overflow:hidden
  }
  /*   Home */
- .home {
-  background: #360033;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-}
 .container {
   display: grid;
   grid-template-columns: 50fr 50fr;

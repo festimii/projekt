@@ -4,21 +4,7 @@
   <div class="home">
     <Navbar />
 
-    <div
-      class="container"
-      style="
-        margin-left: 0px;
-        padding-left: 0px;
-        margin-right: 0px;
-        padding-right: 0px;
-      "
-    >
-    
-      <div class="left">
-        <img src="../assets/name.svg" alt="" srcset="" />
-      </div>
-    
-    </div>
+      <Landing />
     
       <Account />
       <Register />
@@ -30,13 +16,13 @@
 
 
 <script lang="ts">
-
+import Landing from "../components/Landing.vue";
 import Navbar from "../components/Navbar.vue";
 import Account from '../components/Account.vue';
 import Register from '../components/Register.vue';
 
 export default {
-  components: { Navbar,Account,Register}
+  components: { Navbar,Account,Register,Landing}
 };
 </script>
 
@@ -44,11 +30,18 @@ export default {
 
 
 <style>
-.home {
-  background: #360033;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+/* Override UGG site */
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
 }
 .container {
   display: grid;

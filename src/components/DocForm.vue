@@ -133,5 +133,8 @@ name:'DocForm',
   margin-top: 15px;
   padding-left: 28px;
 }
+#btn-secondary{
+  background-color: #212529 !important
+}
 
 </style>
