@@ -47,28 +47,42 @@
       <div class="form-row">
         <div class="col-md-6 mb-3">
           <label for="validationCustom03">Qyteti</label>
-          <input
-            type="text"
+          <select
             class="form-control"
-            id="validationCustom03"
+            id="validationCustom05"
             placeholder="Qyteti"
             required
             v-model="user.qyteti"
-          />
+          >
+            <option>I Papercaktuar</option>
+            <option>Prishtina</option>
+            <option>Prizren</option>
+            <option>Ferizaj</option>
+            <option>Pejë</option>
+            <option>Gjakovë</option>
+            <option>Gjilan</option>
+            <option>Mitrovicë</option>
+           
+          </select>
           <div class="invalid-feedback">
             Please provide a valid city.
           </div>
         </div>
         <div class="col-md-3 mb-3">
           <label for="validationCustom04">Kombesia</label>
-          <input
-            type="text"
+          <select
+            
             class="form-control"
             id="validationCustom04"
-            placeholder="Kombesia"
+            aria-placeholder="Kombesia"
             required
             v-model="user.kombsia"
-          />
+          >
+           <option>I Papercaktuar</option>
+            <option>Shqiptar</option>
+            <option>Serbian</option>
+            <option>Other</option>
+          </select>
           <div class="invalid-feedback">
             Please provide a valid state.
           </div>
@@ -80,6 +94,7 @@
             id="validationCustom05"
             required
             v-model="user.gjaku"
+            aria-placeholder="Gr.Gjaku"
           >
             <option>I Papercaktuar</option>
             <option>A+</option>
@@ -137,6 +152,7 @@
               class="form-control"
               id="exampleFormControlTextarea1"
               v-model="user.pershkrimi"
+              placeholder="Detajet e kontrolles"
               rows="3"
             ></textarea>
           </div>
@@ -149,7 +165,7 @@
           class="form-control"
           id="validationCustom03"
           v-model="user.pagesa"
-          placeholder=""
+          placeholder="Pagesa"
           required
         />
         <div class="invalid-feedback">

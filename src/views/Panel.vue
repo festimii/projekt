@@ -129,7 +129,7 @@ body {
 }
 .sidebar .nav-link {
   font-weight: 500;
-  color: #333;
+  color: white;
 }
 .flex-column {
   flex-direction: column !important;
