@@ -21,7 +21,6 @@
                 class="form-control is-invalid"
                 id="name"
                 placeholder="Your name..."
-                
               />
             </div>
             <div class="form-group">
@@ -77,29 +76,23 @@ export default {
       fb.auth()
         .createUserWithEmailAndPassword(this.email, this.password)
         .then((userCredential) => {
-           this.$router.replace('panel');
+          this.$router.replace("panel");
           const user = userCredential.user;
-          userCredential.user
-          .updateProfile({
+          userCredential.user.updateProfile({
             displayName: this.username,
-          })
+          });
           console.log(user); // mos e fshi dej build
-        
         })
-      
-          
-    
-        .then(()=>{})
+
+        .then(() => {})
         .catch((error) => {
           var errorCode = error.code;
-          var errorMessage =  alert(error.message);
+          var errorMessage = alert(error.message);
           // ..
         });
     },
   },
 };
-
 </script>
 
-<style src="../assets/register.scss" lang="scss">
-</style>
+<style src="../assets/register.scss" lang="scss"></style>
