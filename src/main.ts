@@ -8,6 +8,8 @@ import {fb} from '../src/components/firebaseConfig'
 Vue.config.productionTip = false
 
 
+
+
 let app = '';
 
 fb.auth().onAuthStateChanged(function(user) {

@@ -18,7 +18,7 @@
           <table class="table table-striped table-dark">
             <thead>
               <tr>
-                <th scope="col">ID</th>
+                
                 <th scope="col">Emri</th>
                 <th scope="col">Mbiemri</th>
                 <th scope="col">Adresa</th>
@@ -31,7 +31,7 @@
             </thead>
             <tbody>
               <tr v-for="user in Users" :key="user.key">
-                <td>{{ user.key }}</td>
+              
                 <td>{{ user.emri }}</td>
                 <td>{{ user.mbiemri }}</td>
                 <td>{{ user.adresa }}</td>
@@ -44,6 +44,7 @@
                   <button
                     @click.prevent="deleteUser(user.key)"
                     class="btn btn-danger"
+                    disabled
                   >
                     Delete
                   </button>
