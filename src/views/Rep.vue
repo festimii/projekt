@@ -38,7 +38,7 @@
                 <td>{{ user.qyteti }}</td>
                 <td>{{ user.kombsia }}</td>
                 <td>{{ user.gjaku }}</td>
-                <td>{{ user.alergjia }}</td>
+                <td>{{ user.alerxhia }}</td>
                 <td>{{ user.pagesa }}</td>
                 <td>
                   <button

@@ -110,39 +110,26 @@
             Please provide a valid zip.
           </div>
         </div>
-        <legend class="col-form-label col-sm-2 pt-0">ALERXHI</legend>
-        <div class="col-sm-10">
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="gridRadios"
-              id="gridRadios1"
-              value="option1"
-              checked
-              v-model="user.alerxhia"
-            />
-            <label class="form-check-label" for="gridRadios1">
-              PO
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="gridRadios"
-              id="gridRadios2"
-              value="option2"
-              v-model="user.alerxhia"
-            />
-            <label class="form-check-label" for="gridRadios2">
-              JO
-            </label>
-          </div>
+
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom05">Alergjia</label>
+          <select
+            class="form-control"
+            id="validationCustom05"
+            required
+            v-model="user.alerxhia"
+            aria-placeholder="Alergji"
+          >
+            <option>I Papercaktuar</option>
+            <option>Po</option>
+            <option>Jo</option>
+          </select>
           <div class="invalid-feedback">
             Please provide a valid zip.
           </div>
         </div>
+        
+        
         <div class="col-sm-10">
           <div class="form-group">
             <label for="exampleFormControlTextarea1"
